@@ -193,6 +193,7 @@ $searchInput.on("input", searchQuestions);
 
 function searchQuestions(){
   
+  
   var userInput;
   
   //checks user input
