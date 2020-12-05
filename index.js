@@ -3,7 +3,6 @@ const loggedOutLinks = document.querySelectorAll('.logged-out');
 const loggedInLinks = document.querySelectorAll('.logged-in');
 const questionCards = document.querySelector('#questionCards');
 
-
 //Modal pop-ups 
 const setupUI = (user) => {
   if (user) {
@@ -28,8 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 });
-
-
 
 // Takes JSON retrieved from db-firestore and generates cards based on the information there
 function renderCardsAuth()
@@ -74,10 +71,11 @@ function createQuestionCards(doc)
     '<h2 class="header">'+ doc.data().qHeader + '</h2>' +
     '<div class="card horizontal">' +
       '<div class="card-stacked">' +
-        '<div class="card-content>' + 
-          '<p>' + doc.data().question + '</p>'+  
+        '<div class="card-content">' +
+          '<p>' + doc.data().question + '</p>'+
         '</div>'+
         '<div class="card-action">'+
+         
         '<p>' + a + '</p>'+
         '<a onclick="incrementUpVote()">' + "UpVote" + '</a>' + 
         '<p>' + b + '</p>'+
@@ -222,28 +220,4 @@ function searchQuestions(){
   });
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
 

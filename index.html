@@ -192,18 +192,14 @@
       
     </div>  End Card Sort-->
 
-      
+    <!-- search field for cards-->
+    <div id="search">
+      <form>
+      <input type="search" id="search-input" placeholder="Search ..." />
+    </form>
 
 
-     <!-- search field for cards-->
-      <div id="search">
-        <form>
-          <input type="search" id="search-input" placeholder="Search ..." />
-        </form>
-      
-   
-     <!-- Card Sort -->
-
+      <!-- Card Sort -->
       <div class="right col s5 m5">
         <h2> Filters </h2>
         <div class="card">
@@ -226,22 +222,28 @@
 
       <!-- End Card Sort -->
 
+
+
+
       <!-- Start Question Cards DEMO -->
       <div class="col s6 m6">
         <div class="left questionCards" id="questionCards">
-        
 
-      <!--  
+          <!--
           <div class="genericCard">
             <h2 class="header">Question Title</h2>
             <div class="card horizontal">
               <div class="card-stacked">
-                <div class="card-content" id = "card-content">
-              
+                <div class="card-content">
+                  <p>Question Body Here</p>
                 </div>
                 <div class="card-action">
                  
-  
+                  <a href="#"> Upvote </a>
+                  <a href="#"> Downvote </a>
+                  <a href="#"> Up/Down Ratio </a>
+                  <a href="#"> Tags </a>
+                  <a href="#"> Date Posted </a>
                   
                 </div>
               </div>
@@ -254,6 +256,12 @@
       </div> <!-- End of Question Cards-->
     </div> <!-- End main body container-->
   </div> <!--End Wrapper-->
+
+
+
+
+
+
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
@@ -272,8 +280,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="auth.js"></script>
   <script src="index.js"></script>
-
-  
 </body>
 
 </html>
